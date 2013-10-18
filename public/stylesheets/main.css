@@ -1,0 +1,77 @@
+.faces {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.faces > li {
+  display: block;
+  list-style: none;
+  background: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 230px;
+  height: 200px;
+  margin-right: 5px;
+}
+.faces > li > h2 {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #575b66;
+}
+
+body > .container.first-container {
+  padding-top: 60px;
+}
+
+.navbar-inverse {
+
+  background-color: #3e4149;
+  background-image: -moz-linear-gradient(top, #464952, #34373d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#464952), to(#34373d));
+  background-image: -webkit-linear-gradient(top, #464952, #34373d);
+  background-image: -o-linear-gradient(top, #464952, #34373d);
+  background-image: linear-gradient(to bottom, #464952,#34373d);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF464952', endColorstr='#FF34373D', GradientType=0);
+  background-color: #575b66;
+  border-bottom: 1px solid #1d1e21;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #111111;  
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+  background-color: #18bde6;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  text-shadow: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+  
+
+
