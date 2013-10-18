@@ -2,8 +2,8 @@ module QppTest
   class Car
     attr_reader :engine
 
-    def engine
-      @engine ||= Engine.new(4)
+    def initialize(engine)
+      @engine = engine
     end
 
     def move
