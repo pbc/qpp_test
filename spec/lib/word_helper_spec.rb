@@ -5,7 +5,7 @@ require 'spec_helper'
 describe QppTest::WordHelper do
 
   context "#tally" do
-    let(:text_sample) { "key tree cat mouse tree monkey" }
+    let(:text_sample) { "key     tree cat   mouse tree monkey" }
 
     let(:expected_result) {
       {
@@ -42,7 +42,7 @@ describe QppTest::WordHelper do
     let(:message) { "Hi @jack and @jill please review my commit." }
 
     let(:expected_result) { "Hi <a href='http://github.com/jack'>@jack</a> and <a href='http://github.com/jill'>@jill</a> please review my commit." }
-    
+
     it "creates link to user" do
 
       expect(
