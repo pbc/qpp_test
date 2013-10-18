@@ -39,9 +39,9 @@ describe QppTest::WordHelper do
 
   context "#link_to_users" do    
     let(:domain) { "http://github.com/" }
-    let(:message) { "Hi @jack and @jill please review my commit." }
+    let(:message) { "Hi @jack and @jill please review my commit. Hi again @jack and @jill" }
 
-    let(:expected_result) { "Hi <a href='http://github.com/jack'>@jack</a> and <a href='http://github.com/jill'>@jill</a> please review my commit." }
+    let(:expected_result) { "Hi <a href='http://github.com/jack'>@jack</a> and <a href='http://github.com/jill'>@jill</a> please review my commit. Hi again <a href='http://github.com/jack'>@jack</a> and <a href='http://github.com/jill'>@jill</a>" }
 
     it "creates link to user" do
 
